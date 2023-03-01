@@ -1,0 +1,27 @@
+/*Flexbox
+hozz létre egy css-t és flexbox-szal
+ 4 mondat kerüljön egymás mellé, div-nek legyen szegélye,
+  és legyen egy töréspont 500px-nél,
+ és onnantól két mondat kerüljön egymás mellé. */
+* {
+    box-sizing: border-box;
+}
+ section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+ }
+ section div {
+    flex: 0 0 calc(25% - 5px);
+    border: 1px solid black;
+    
+ }
+
+ @media screen and (max-width: 500px) {
+    section div{
+        flex: 0 0 calc(50% - 5px);
+    }
+
+ }
