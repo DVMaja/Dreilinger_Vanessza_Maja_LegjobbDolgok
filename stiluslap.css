@@ -19,6 +19,12 @@ hozz létre egy css-t és flexbox-szal
     
  }
 
+ table, td, tr, th{
+   border-collapse: collapse;
+   border: 1px double black;
+ }
+
+
  @media screen and (max-width: 500px) {
     section div{
         flex: 0 0 calc(50% - 5px);
